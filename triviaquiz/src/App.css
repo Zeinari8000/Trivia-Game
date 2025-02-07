@@ -1,0 +1,58 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.answer-buttons {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  gap: 15px; 
+}
+
+button {
+  padding: 10px 20px; 
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  background-color: cyan;
+  color: black; 
+  transition: transform 0.2s ease, background-color 0.2s ease; 
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #0056b3;
+  color: white;
+}
+
+.answer-buttons button.correct {
+  background-color: green;
+  color: white;
+}
+
+.answer-buttons button.incorrect {
+  background-color: red;
+  color: white;
+}
+
+p {
+  font-size: larger;
+}
+li {
+  font-size: large;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
